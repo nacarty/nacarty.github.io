@@ -19,6 +19,19 @@
 
 
 <style>
+#myName{
+    height:9vh; 
+	padding:15px 30px; 
+	font-size: 16px; 
+	border: 2px solid black;"
+}
+#projectTitle{
+    font-size:25; 
+	text-align:center; 
+	color:gray; 
+	font-weight:900; 
+	margin-top: 5px;"
+}
 #myUlist {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -54,9 +67,36 @@
   background-attachment:fixed;
   background-repeat:no-repeat;
 }
-
-
-  
+.img-thumbnail{
+	height:25vw;
+	width:360px;
+}
+.col-sm-4 p{
+	height:120px; 
+	color:white; 
+	font-size:1vw; 
+	font-weight:900; 
+	background-color:#f88; 
+	text-align: justify;
+	text-justify: inter-word;
+}
+.btn-lg{
+   height:9vh; 
+   padding:15px 30px; 
+   font-size: 16px; 
+   border: 2px solid black;
+}
+#contact-div h1{
+   font-size:20; 
+   color:black; 
+   font-weight:900; 
+   margin: 100px 5vw 0 2vw;
+}
+#contact-panel{
+  float:right; 
+  margin-right:8vw; 
+  margin-top:3vw;
+}
 </style>
 
 </head>
@@ -96,21 +136,20 @@
 
   <div id="home-div" class="container">
   <div class="jumbotron">
-    <h1 style="font-size:40; text-align:center; font-weight:900; margin-top:100px;"> Nigel A. Carty</h1>
-    <h2 style="font-size:25; text-align:center; color:gray; font-weight:900; margin-top: 5px;"><b> Free Code Camp Portfolio</b></h2>
+    <h1 id='myName'> Nigel A. Carty</h1>
+    <h2 id='projectTitle'><b> Free Code Camp Portfolio</b></h2>
   </div>
-    <br><br><br>
-  <div style="text-align:center;">
-    <button type="button" class="btn btn-lg" style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+  <div id='home-panel' style="text-align:center;">
+    <button type="button" class="btn btn-lg">
       <a href="https://www.linkedin.com/in/nigelacarty"><span style="font-weight:900">in  </span><b>Linkedin</b></a></button>
-    <button type="button" class="btn btn-lg" style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;" >
+    <button type="button" class="btn btn-lg">
       <a href="https://www.freecodecamp.com/nacarty"><img src="photos/freecodecamp-blue-logo-small.png" class="img-circle"><b> freeCodeCamp</b></a></button>
-    <button type="button" class="btn btn-lg"style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+    <button type="button" class="btn btn-lg">
       <a href="mailto:nacarty@gmail.com"><span class="glyphicon glyphicon-envelope"> </span><b>  nacarty@gmail.com</b></a></button>
-     <button type="button" class="btn btn-lg"style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+     <button type="button" class="btn btn-lg">
       <a href="https://github.com/nacarty"><img src="photos/github.png"><b> Github</b></a></button>
 	  
-      <div style="height:50px"></div>
+      <div style="height:25px"></div>
   </div>
 </div>
 <!-- End of HOME-DIV -->
@@ -163,26 +202,23 @@
   <div class="row">
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/twitchtv">
-      <img src="photos\twitchTV.JPG" class="img-responsive img-thumbnail" style=" height:25vw;" alt="Twith TV Channels Thumbnail">
+      <img src="photos\twitchTV.JPG" class="img-responsive img-thumbnail"  alt="Twith TV Channels Thumbnail">
       
-        <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+        <p> 
       This is an application that interfaces with TWITCH TV API to look up specified channels and display the logo associated with the stream, the official name, the game being streamed, if any, the status of the channel and the number of followers, if relevant.
        </p></a>
     
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/weather-system">
-      <img src="photos/weatherApp.JPG" class="img-responsive img-thumbnail" style="height:25vw;" alt="Weather Application Thumbnail">
-    <p style="height:120px; color:white; font-size:0.9vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/weatherApp.JPG" class="img-responsive img-thumbnail"  alt="Weather Application Thumbnail">
+    <p> 
       This is an application that looks up and displays the local weather of the current user. The application uses the browser's in-built function to get the current geographic location, or in the absence of such in-built capability, ip-api.com. It then uses that information to look up and import weather data relevant to the location from Forecast.io </p></a>
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/simon">
-      <img src="photos/simon.JPG" class="img-responsive img-thumbnail" style="width:360px; height:25vw;" alt="Simon Game Thumbnail">
-    <p style="height:120px; color:white; font-size:0.9vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/simon.JPG" class="img-responsive img-thumbnail" alt="Simon Game Thumbnail">
+    <p> 
       This is my own implementation of the well-known game, SIMON. However, I have added two twists: the colors shuffle and the player must in one case follow the colors, and in the other case, follow the quadrants and ignore colors. These twists add greater challenge and deeper interest.
       </p></a>
     </div>    
@@ -192,24 +228,21 @@
   <div class="row">
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/tictactoe">
-      <img src="photos\tictactoe.JPG" class="img-responsive img-thumbnail" style=" height:25vw;" alt="Tictactoe Game Thumbnail">
+      <img src="photos\tictactoe.JPG" class="img-responsive img-thumbnail" alt="Tictactoe Game Thumbnail">
       
-        <p style="height:120px; color:white; font-size:0.9vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> This is my personal implementation of TIC-TAC-TOE using a minimax algorithm. The user has the option of using a board size greater than 3X3 up to 8X8. When the board size is greater than 3X3, the algorithm uses a depth-limited form of minimax because of the complexity of the algorithm.
+        <p> This is my personal implementation of TIC-TAC-TOE using a minimax algorithm. The user has the option of using a board size greater than 3X3 up to 8X8. When the board size is greater than 3X3, the algorithm uses a depth-limited form of minimax because of the complexity of the algorithm.
        </p></a>
     
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/pomodoro">
-      <img src="photos/pomodoro.JPG" class="img-responsive img-thumbnail" style="width:360px; height:25vw;" alt="Pomodoro Application Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> This is my beautiful version of the POMODORO clock. This implementation required a healthy appreciation of Trigonometry and SVG graphics in HTML5. The user has the option of changing the display size of the clock.</p></a>
+      <img src="photos/pomodoro.JPG" class="img-responsive img-thumbnail" alt="Pomodoro Application Thumbnail">
+    <p> This is my beautiful version of the POMODORO clock. This implementation required a healthy appreciation of Trigonometry and SVG graphics in HTML5. The user has the option of changing the display size of the clock.</p></a>
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/fccalculator">
-      <img src="photos/calculator.JPG" class="img-responsive img-thumbnail" style="width:360px; height:25vw;" alt="Calculator Application Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/calculator.JPG" class="img-responsive img-thumbnail" alt="Calculator Application Thumbnail">
+    <p> 
       This is a Javascript calculator that I intend to do further work on to make it a professional-grade application. This implementation allows the user to see the history of the calculations. It provides a number of fairly complex functions usually found on good calculators.
       </p></a>
     </div>
@@ -220,24 +253,21 @@
   <div class="row">
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/wikipedia">
-      <img src="photos\wikipedia.JPG" class="img-responsive img-thumbnail" style=" height:25vw;" alt="Wikipedia Application Thumbnail">
+      <img src="photos\wikipedia.JPG" class="img-responsive img-thumbnail" alt="Wikipedia Application Thumbnail">
       
-        <p style="height:120px; color:white; font-size:0.9vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> This application interfaces with wikipedia through wikipedia's provided API. The application looks up lists of wikipedia documents and allows the user to opt to view any of those files. Conveniently, the user can choose any language as the basis of his/her search. There are over 200 languages available to the user.
+        <p> This application interfaces with wikipedia through wikipedia's provided API. The application looks up lists of wikipedia documents and allows the user to opt to view any of those files. Conveniently, the user can choose any language as the basis of his/her search. There are over 200 languages available to the user.
        </p></a>
     
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/quotemachine">
-      <img src="photos/quoteMachine.JPG" class="img-responsive img-thumbnail" style="height:25vw;" alt="Quote Application Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> This application is called a random quote machine. It generates famous quotes by well-kown personalities like ALbert Einstein and others. There is a small database of sorts (a JSON file) fron which the quotes are randomly retrieved.</p></a>
+      <img src="photos/quoteMachine.JPG" class="img-responsive img-thumbnail"  alt="Quote Application Thumbnail">
+    <p> This application is called a random quote machine. It generates famous quotes by well-kown personalities like ALbert Einstein and others. There is a small database of sorts (a JSON file) fron which the quotes are randomly retrieved.</p></a>
     </div>
     
     <div class="col-sm-4"><a href="https://bigdatauniversity.com/courses/">
-      <img src="photos/big-data-university.jpg" class="img-responsive img-thumbnail" style="height:25vw;" alt="FCC Portfolio Page Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/big-data-university.jpg" class="img-responsive img-thumbnail" alt="FCC Portfolio Page Thumbnail">
+    <p> 
       This is a thumbnail of IBM's Big Data University webpage where I have so far completed one course in the basics of Big Data.
       I am thinking of doing the course on Hadoop and a few others.
       </p><br></a>
@@ -247,10 +277,9 @@
   <div class="row">
     
     <div class="col-sm-4">
-      <img src="photos\console-card-game-in-csharp.jpg" class="img-responsive img-thumbnail" style=" height:25vw;" alt="Console Poker Game Thumbnail">
+      <img src="photos\console-card-game-in-csharp.jpg" class="img-responsive img-thumbnail" alt="Console Poker Game Thumbnail">
       
-        <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+        <p> 
       This is a console Poker application written in C# using Xamarin IDE. The game takes between 2 and 6 players. 
       It deals as many hands as is possible and shuffles before dealing each hand.
        </p>
@@ -258,17 +287,15 @@
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/">
-      <img src="photos/fcc-challenge02-website.jpg" class="img-responsive img-thumbnail" style="height:25vw;" alt="FCC Portfolio Page Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/fcc-challenge02-website.jpg" class="img-responsive img-thumbnail" alt="FCC Portfolio Page Thumbnail">
+    <p> 
       This is a thumbnail of the webpage you are now looking at. It is simple website with some personal profile information,
     my recent projects and contact information. </p></a>
     </div>
     
     <div class="col-sm-4"><a href="https://nacarty.github.io/fcc-tribute/">
-      <img src="photos/fcc-tribute-website.jpg" class="img-responsive img-thumbnail" style="width:360px; height:25vw;" alt="FCC Portfolio Page Thumbnail">
-    <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/fcc-tribute-website.jpg" class="img-responsive img-thumbnail" alt="FCC Portfolio Page Thumbnail">
+    <p> 
       This is my first freecodecamp.com project. Its is a simple website documenting some accomplishments of Hillary Rodham Clinton, first female nominee for President of the USA.
       </p></a>
     </div>
@@ -278,18 +305,16 @@
   <div class="row">
     <br>
     <div class="col-sm-4"> <a href="https://www.datacamp.com/courses">
-      <img src="photos/R-programming-datacamp.jpg" class="img-responsive img-thumbnail" style="height:25vw;" alt="R programming Thumbnail">
-      <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/R-programming-datacamp.jpg" class="img-responsive img-thumbnail" alt="R programming Thumbnail">
+      <p> 
       I recently completed a course in R programming at datacamp.com. I intend to take a few more courses that will help build
       my career in the Data Science field.
       </p></a>    
     </div>
     
     <div class="col-sm-4"> <a href="https://www.axelos.com/certifications/itil-certifications/">
-      <img src="photos/itil-certificate.jpg" class="img-responsive img-thumbnail" style="width:360px; height:25vw;" alt="ITIL Certificate Thumbnail">
-      <p style="height:120px; color:white; font-size:1vw; font-weight:900; background-color:#f88; text-align: justify;
-     text-justify: inter-word;"> 
+      <img src="photos/itil-certificate.jpg" class="img-responsive img-thumbnail" alt="ITIL Certificate Thumbnail">
+      <p> 
       This is a thumbnail of my ITIL Foundation certificate that I received recently. I am thinking of doing ITIL Strategy 
       and perhaps even go on to get the ITIL Expert certificate. 
       </p></a>
@@ -301,19 +326,19 @@
 <!-- Beginning of Contact-DIV -->
 
 <div id="contact-div" class="container">
-  <h1 style="font-size:20; color:black; font-weight:900; margin: 100px 5vw 0 2vw;"><b>Connect with me |</b></h1>
+  <h1><b>Connect with me |</b></h1>
   <div style="margin-left:2vw; background-color:black; height: 5px; width:20vw"></div>
   
-  <div style="float:right; margin-right:8vw; margin-top:3vw;">
-      
-    <button type="button" class="btn btn-lg" style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;" >
+  <div id='contact-panel'>
+    <button type="button" class="btn btn-lg">
       <a href="https://www.freecodecamp.com/nacarty"><img src="photos/freecodecamp-blue-logo-small.png" class="img-circle"><b> freeCodeCamp</b></a></button><br><br>
-    <button type="button" class="btn btn-lg" style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+    <button type="button" class="btn btn-lg">
       <a href="https://www.linkedin.com/in/nigelacarty"><span style="font-weight:900">in  </span><b>Linkedin</b></a></button><br><br>
     
-    <button type="button" class="btn btn-lg"style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+    <button type="button" class="btn btn-lg">
       <a href="https://github.com/nacarty"><img src="photos/github.png"><b> Github</b></a></button><br><br>
-    <button type="button" class="btn btn-lg"style="height:9vh; padding:15px 30px; font-size: 16px; border: 2px solid black;">
+	  
+    <button type="button" class="btn btn-lg">
       <a href="mailto:nacarty@gmail.com"><span class="glyphicon glyphicon-envelope"> </span><b>  nacarty@gmail.com</b></a></button>
     
       
